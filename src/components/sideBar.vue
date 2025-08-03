@@ -1,21 +1,39 @@
 <template>
-  <div class="sideBar">
-    <a href="" class="sideMenu"><i class="bi bi-menu-button-wide-fill"></i></a>
-    <ul class="smi">
-      <li v-for="smi in smis" :key="smi.id">
-        <a href=""><i :class="smi.icon"></i></a>
-      </li>
-    </ul>
+  <div>
+    <div class="sideBar">
+      <a
+        href=""
+        class="Menu"
+        :class="{ active: active }"
+        @click.stop.prevent="showToggleMenu"
+        ><i class="bi bi-menu-app-fill"></i
+      ></a>
+      <ul class="smi">
+        <li v-for="smi in smis" :key="smi.id">
+          <a href=""><i :class="smi.icon"></i></a>
+        </li>
+      </ul>
+    </div>
+    <SideMenu :active="active" />
+    <!-- active variable sideBar.vue(parent) to
+    SideMenu.vue(child) passing boolean value bind active property -->
   </div>
 </template>
 
 <script setup>
+import { ref } from "vue";
+import SideMenu from "./sideMenu.vue";
 const smis = [
   { id: 1, icon: "bi bi-facebook" },
   { id: 2, icon: "bi bi-instagram" },
   { id: 3, icon: "bi bi-twitter" },
   { id: 4, icon: "bi bi-youtube" },
 ];
+
+const active = ref(false);
+const showToggleMenu = () => {
+  active.value = !active.value;
+};
 </script>
 
 <style scoped>
@@ -32,13 +50,13 @@ const smis = [
   z-index: 2000;
   transition: 1s;
 }
-.sideMenu {
+.Menu {
   color: var(--white-color);
   font-size: 1.6rem;
   transition: ease 0.1s;
-  z-index: 2000;
+  z-index: 1000;
 }
-.sideMenu:active {
-  transition: rotateZ(360deg);
+.Menu.active {
+  transform: rotateZ(180deg);
 }
 </style>
