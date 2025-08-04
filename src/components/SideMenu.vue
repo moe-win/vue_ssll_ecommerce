@@ -1,24 +1,25 @@
 <template>
   <div class="side-menu" :class="{ active: active }">
-    <p>Side Menu Here</p>
+    <Nav />
   </div>
 </template>
 <script setup>
+import Nav from "./Nav.vue";
 const props = defineProps({
   active: {
-    type: boolean,
-    required: true,
+    type: Boolean,
+    default: true,
   },
 });
 </script>
-<style scoped>
+<style>
 .side-menu {
   position: fixed;
   left: -300px;
   height: 100%;
   width: 300px;
-  background: var(--primary);
-  padding: 40px;
+  background: var(--primary-color);
+  padding: 30px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -31,5 +32,27 @@ const props = defineProps({
 }
 .side-menu .nav {
   height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 25px;
+  margin: 20px;
+}
+.side-menu .nav li {
+  list-style: none;
+  margin: 0 10px;
+}
+.side-menu .nav li a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.side-menu .nav li:hover a,
+.side-menu .nav li a.active {
+  color: var(--secondary-color);
 }
 </style>

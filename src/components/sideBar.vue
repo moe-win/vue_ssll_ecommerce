@@ -22,7 +22,7 @@
 
 <script setup>
 import { ref } from "vue";
-import SideMenu from "./sideMenu.vue";
+import SideMenu from "./SideMenu.vue";
 const smis = [
   { id: 1, icon: "bi bi-facebook" },
   { id: 2, icon: "bi bi-instagram" },
