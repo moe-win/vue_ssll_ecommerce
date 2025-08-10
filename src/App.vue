@@ -1,12 +1,15 @@
 <template>
   <div>
-    <sideBar />
+    <SideBar />
     <Header />
+    <main class="id">
+      <RouterView />
+    </main>
   </div>
 </template>
 
 <script setup>
 import Header from "./components/Header.vue";
-import sideBar from "./components/sideBar.vue";
+import SideBar from "./components/SideBar.vue";
 </script>
 <style scoped></style>

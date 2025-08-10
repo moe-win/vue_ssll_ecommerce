@@ -1,0 +1,194 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "name": "Chair",
+      "price": 49.99,
+      "category": "Furniture",
+      "description": "A comfortable chair for your living room.",
+      "image": "/images/chair.jpg",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 1,
+      "active": true,
+      "rating": 4.5
+    },
+    {
+      "id": 2,
+      "name": "Table",
+      "price": 89.99,
+      "category": "Furniture",
+      "description": "A stylish table for your dining area.",
+      "image": "/images/table.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 1,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 3,
+      "name": "Lamp",
+      "price": 29.99,
+      "category": "Lighting",
+      "description": "A modern lamp to brighten your space.",
+      "image": "/images/table-lamp.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 1,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 4,
+      "name": "Sofa",
+      "price": 299.99,
+      "category": "Furniture",
+      "description": "A spacious sofa for your living room.",
+      "image": "/images/sofa.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 15,
+      "quantity": 1,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 5,
+      "name": "Bookshelf",
+      "price": 199.99,
+      "category": "Furniture",
+      "description": "A wooden bookshelf to organize your books.",
+      "image": "/images/book-shelf.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 20,
+      "quantity": 1,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 6,
+      "name": "Desk",
+      "price": 149.99,
+      "category": "Office",
+      "description": "A sleek desk for your home office.",
+      "image": "/images/desk.jpg",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 2,
+      "active": false,
+      "rating": 2.5
+    },
+    {
+      "id": 7,
+      "name": "Chair Mat",
+      "price": 19.99,
+      "category": "Accessories",
+      "description": "A protective mat for your chair.",
+      "image": "/images/chair-mat.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 5,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 8,
+      "name": "Cushion",
+      "price": 15.99,
+      "category": "Accessories",
+      "description": "A soft cushion for added comfort.",
+      "image": "/images/cushion.png",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 0,
+      "quantity": 15,
+      "active": false,
+      "rating": 4.5
+    },
+    {
+      "id": 9,
+      "name": "Wall Art",
+      "price": 39.99,
+      "category": "Decor",
+      "description": "A beautiful piece of wall art.",
+      "image": "/images/wall-art.jpg",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 1,
+      "active": false,
+      "rating": 3
+    },
+    {
+      "id": 10,
+      "name": "Rug",
+      "price": 79.99,
+      "category": "Decor",
+      "description": "A cozy rug for your living space.",
+      "image": "/images/rug.jpg",
+      "color": "Red",
+      "background": "#f8f9fa",
+      "colors": [
+        { "id": 1, "color": "Red", "active": true },
+        { "id": 2, "color": "Blue", "active": false },
+        { "id": 3, "color": "Green", "active": false }
+      ],
+      "discount": 10,
+      "quantity": 1,
+      "active": false,
+      "rating": 4.5
+    }
+  ]
+}
