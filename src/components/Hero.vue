@@ -1,7 +1,7 @@
 <template>
   <div class="hero">
     <HeroSwiper />
-    <HeroSlide />
+    <HeroSlide v-for="item in items" :key="item.id" :item="item" />
   </div>
 </template>
 <script setup>
