@@ -14,6 +14,35 @@
           ></span>
         </div>
       </div>
+      <div class="actions">
+        <button class="btn btn-primary">Buy Now</button>
+        <span
+          class="price"
+          :style="{
+            textDecoration: item.discount ? 'line-through' : 'none',
+            fontSize: item.discount ? '0.8rem' : '0.9rem',
+            fontWeight: item.discount ? 'normal' : 'bold',
+            color: item.discount ? 'blue' : '#000000ff',
+          }"
+          >${{ item.price }}</span
+        >
+        <span
+          class="price"
+          v-if="item.discount !== 0"
+          :style="{
+            fontSize: item.discount ? '1.3rem' : '1rem',
+            fontWeight: 'bold',
+            color: '#e70d55ff',
+          }"
+          >${{ (item.price - item.discount).toFixed(0) }}</span
+        >
+        <div class="rating">
+          <h4>Rating: {{ item.rating }}</h4>
+        </div>
+        <RouterLink :to="`/product/${item.id}`" :class="add - to - cart"
+          >Larn More</RouterLink
+        >
+      </div>
     </div>
   </div>
 </template>
@@ -79,5 +108,12 @@ const props = defineProps({
 .content .color .color-name span:hover,
 .content .color .color-name span:active {
   box-shadow: 0 0 10px #10104f;
+}
+.actions {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+  align-items: first baseline;
+  margin-top: 20px;
 }
 </style>

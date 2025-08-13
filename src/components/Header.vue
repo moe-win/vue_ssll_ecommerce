@@ -1,7 +1,9 @@
 <template>
   <header id="home">
     <RouterLink to="/" class="logo">
-      True Chair
+      <span class="logo-icon">🪑</span>
+      True Furniture Mart
+      <span class="logo-icon">🪑</span>
     </RouterLink>
     <Nav />
 

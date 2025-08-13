@@ -3,7 +3,7 @@
     {
       "id": 1,
       "name": "Chair",
-      "price": 49.99,
+      "price": 49,
       "category": "Furniture",
       "description": "A comfortable chair for your living room.",
       "image": "/images/chair.jpg",
