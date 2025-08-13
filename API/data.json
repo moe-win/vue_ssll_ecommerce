@@ -16,13 +16,13 @@
       ],
       "discount": 10,
       "quantity": 1,
-      "active": true,
+      "active": false,
       "rating": 4.5
     },
     {
       "id": 2,
       "name": "Table",
-      "price": 89.99,
+      "price": 90,
       "category": "Furniture",
       "description": "A stylish table for your dining area.",
       "image": "/images/table.png",
@@ -33,9 +33,9 @@
         { "id": 2, "color": "Blue", "active": false },
         { "id": 3, "color": "Green", "active": false }
       ],
-      "discount": 10,
+      "discount": 0,
       "quantity": 1,
-      "active": false,
+      "active": true,
       "rating": 4.5
     },
     {
@@ -52,7 +52,7 @@
         { "id": 2, "color": "Blue", "active": false },
         { "id": 3, "color": "Green", "active": false }
       ],
-      "discount": 10,
+      "discount": 0,
       "quantity": 1,
       "active": false,
       "rating": 4.5

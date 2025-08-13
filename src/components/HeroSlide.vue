@@ -22,7 +22,7 @@
             textDecoration: item.discount ? 'line-through' : 'none',
             fontSize: item.discount ? '0.8rem' : '0.9rem',
             fontWeight: item.discount ? 'normal' : 'bold',
-            color: item.discount ? 'blue' : '#000000ff',
+            color: item.discount ? 'blue' : '#e70d55ff',
           }"
           >${{ item.price }}</span
         >
@@ -42,6 +42,15 @@
         <RouterLink :to="`/product/${item.id}`" :class="add - to - cart"
           >Larn More</RouterLink
         >
+      </div>
+    </div>
+    <div class="hero-img">
+      <div
+        class="img-container"
+        :class="{ active: item.active }"
+        :style="{ background: item.color }"
+      >
+        <img :src="item.image" alt="" />
       </div>
     </div>
   </div>
@@ -115,5 +124,20 @@ const props = defineProps({
   gap: 25px;
   align-items: first baseline;
   margin-top: 20px;
+}
+.hero-img {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.img-container img {
+  width: 350px;
+  height: auto;
+  max-height: 400px;
+  object-fit: contain;
+  transition: 0.1s;
+  border-radius: 50px;
 }
 </style>
