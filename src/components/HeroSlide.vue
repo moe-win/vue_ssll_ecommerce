@@ -20,7 +20,7 @@
           class="price"
           :style="{
             textDecoration: item.discount ? 'line-through' : 'none',
-            fontSize: item.discount ? '0.8rem' : '0.9rem',
+            fontSize: item.discount ? '1rem' : '1.5rem',
             fontWeight: item.discount ? 'normal' : 'bold',
             color: item.discount ? 'blue' : '#e70d55ff',
           }"
@@ -55,6 +55,7 @@
     </div>
   </div>
 </template>
+
 <script setup>
 const props = defineProps({
   item: { type: Object, required: true },
@@ -133,11 +134,45 @@ const props = defineProps({
   position: relative;
 }
 .img-container img {
-  width: 350px;
+  width: 600px;
   height: auto;
-  max-height: 400px;
+  max-height: 600px;
   object-fit: contain;
   transition: 0.1s;
   border-radius: 50px;
+}
+@media (max-width: 768) {
+  .hero-slide {
+    flex-direction: column-reverse;
+  }
+  .content {
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+  .hero-img {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    padding: 20px 20px 0 200px;
+  }
+  .img-container img {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+@media (max-width: 1440px) {
+  .content {
+    padding-bottom: 100px;
+  }
+  .content h1 {
+    font-size: 3rem;
+  }
+  .content p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    font-style: italic;
+    color: #e0e0e0;
+  }
 }
 </style>

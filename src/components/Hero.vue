@@ -1,6 +1,6 @@
 <template>
   <div class="hero">
-    <HeroSwiper />
+    <HeroSwiper :items="items" :heroChange="handleHeroChange" />
     <HeroSlide v-for="item in items" :key="item.id" :item="item" />
   </div>
 </template>
@@ -20,6 +20,14 @@ onMounted(() => {
     })
     .catch((error) => console.error("error.message"));
 });
+
+const handleHeroChange = (id) => {
+  items.value.map((item) => {
+    item.active = false;
+    if (item.id === id) item.active = true;
+    return item;
+  });
+};
 </script>
 <style scoped>
 .hero {
