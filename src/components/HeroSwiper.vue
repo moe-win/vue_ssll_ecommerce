@@ -7,7 +7,7 @@
     class="swiper"
   >
     <SwiperSlide
-      v-for="item in items.slice(0, 10)"
+      v-for="item in items.slice(0, 8)"
       :key="item.id"
       class="swiperslide"
     >
@@ -36,8 +36,8 @@ const props = defineProps({
   position: absolute;
   bottom: 0;
   left: 10%;
-  width: 50%;
-  padding-top: 30px;
+  width: 40%;
+  padding-top: 25px;
   padding-bottom: 5px;
 }
 .swiperslide {
@@ -48,9 +48,9 @@ const props = defineProps({
   transition: opacity 0.3s ease;
   background-position: center;
 
-  width: 20px;
+  width: 50px;
   gap: 0px;
-  height: 80px;
+  height: 50px;
 }
 .swiper .swiper-button-prev {
   left: 5px;
@@ -66,7 +66,7 @@ const props = defineProps({
   color: #fff;
   background-color: transparent;
   border-radius: 50%;
-  transition: all 0.3s ease;
+  transition: all 0.5s ease;
   border: 2px solid #fff;
   backdrop-filter: blur(5px);
   display: flex;
@@ -83,13 +83,11 @@ const props = defineProps({
 }
 .swiperslide-img {
   display: block;
-  width: 20%;
-  border-radius: 50%;
-  transition: transform 0.3s ease;
+  width: 100%;
 }
 .swiper .swiper-button-prev,
 .swiper .swiper-button-next {
-  width: 50px;
+  width: 60px;
   height: 50px;
   background-color: transparent;
   border-radius: 20px;

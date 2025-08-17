@@ -6,6 +6,7 @@
 </template>
 <script setup>
 import Hero from "./components/Hero.vue"; // Importing the Hero component
+i;
 </script>
 
 <style></style>
