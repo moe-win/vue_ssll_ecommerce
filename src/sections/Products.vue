@@ -10,8 +10,7 @@
           v-for="item in items"
           :key="item.id"
         >
-          hello
-          <ItemCard />
+          <ItemCard :item="item" />
         </div>
       </div>
     </div>
@@ -31,4 +30,8 @@ onMounted(() => {
     .catch((error) => console.log(error.message));
 });
 </script>
-<style scoped></style>
+<style scoped>
+.product {
+  background: #1e1e1e !important;
+}
+</style>

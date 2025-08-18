@@ -64,8 +64,8 @@ const props = defineProps({
 <style scoped>
 .hero-slide {
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 0px;
+  left: 0px;
   width: 100%;
   height: 100%;
   display: flex;
@@ -134,12 +134,12 @@ const props = defineProps({
   position: relative;
 }
 .img-container img {
-  width: 600px;
-  height: auto;
+  width: 400px;
+  height: 400px;
   max-height: 600px;
   object-fit: contain;
   transition: 0.1s;
-  border-radius: 50px;
+  border-radius: 50%;
 }
 @media (max-width: 768) {
   .hero-slide {
@@ -157,8 +157,12 @@ const props = defineProps({
     padding: 20px 20px 0 200px;
   }
   .img-container img {
-    width: 100%;
-    max-width: 400px;
+    width: 75%;
+    height: 50%;
+    max-height: 200px;
+    max-width: 200px;
+    object-fit: contain;
+    border-radius: 50px;
   }
 }
 @media (max-width: 1440px) {
