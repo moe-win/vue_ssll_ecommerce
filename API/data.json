@@ -151,44 +151,6 @@
       "quantity": 15,
       "active": false,
       "rating": 4.5
-    },
-    {
-      "id": 9,
-      "name": "Wall Art",
-      "price": 39.99,
-      "category": "Decor",
-      "description": "A beautiful piece of wall art.",
-      "image": "/images/wall-art.jpg",
-      "color": "Red",
-      "background": "Green",
-      "colors": [
-        { "id": 1, "color": "Red", "active": true },
-        { "id": 2, "color": "Blue", "active": false },
-        { "id": 3, "color": "Green", "active": false }
-      ],
-      "discount": 10,
-      "quantity": 1,
-      "active": false,
-      "rating": 3
-    },
-    {
-      "id": 10,
-      "name": "Rug",
-      "price": 79.99,
-      "category": "Decor",
-      "description": "A cozy rug for your living space.",
-      "image": "/images/rug.jpg",
-      "color": "Red",
-      "background": "blue",
-      "colors": [
-        { "id": 1, "color": "Red", "active": true },
-        { "id": 2, "color": "Blue", "active": false },
-        { "id": 3, "color": "Green", "active": false }
-      ],
-      "discount": 10,
-      "quantity": 1,
-      "active": false,
-      "rating": 4.5
     }
   ]
 }

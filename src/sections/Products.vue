@@ -16,7 +16,7 @@
     </div>
   </section>
 </template>
-<script>
+<script setup>
 import ItemCard from "@/components/ItemCard.vue";
 import { onMounted, ref } from "vue";
 
